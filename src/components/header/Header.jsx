@@ -11,7 +11,11 @@ const Header = () => {
             <h1 className="header_title">BRAUNSCHWEIG</h1>
           </div>
           <div className="header_wrapper_one">
-            <img src="./images/header_photo.jpg" className="header_photo" />
+            <img
+              src="./images/header_photo.jpg"
+              className="header_photo"
+              alt="colours"
+            />
           </div>
           <div className="header_wrapper_two">
             <h3>
@@ -22,9 +26,9 @@ const Header = () => {
           </div>
           <div className="header_wrapper_three">
             <p className="header_paragraph">
-              I do project management, web development and media prodcution. In
-              other words - I wear many hats with many different purposes, and I
-              can wear one that suits your needs.
+              Project management, media prodcution and a little bit of web
+              development. In other words - I wear many hats with many different
+              purposes, and I can wear one that suits your project.
             </p>
           </div>
         </div>

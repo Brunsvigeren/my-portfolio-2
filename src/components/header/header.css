@@ -40,6 +40,7 @@ header {
 .header_wrapper_two,
 .header_wrapper_three {
   margin-left: 30px;
+  width: 100%;
 }
 
 .header_wrapper_three {
@@ -58,4 +59,41 @@ header {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
+}
+
+/* ============ SOCIAL QUERIES ========== */
+
+@media screen and (max-width: 1172px) {
+  .header_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .header_wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_wrapper_two {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .header_wrapper_three {
+    padding: 30px 50px;
+  }
+
+  .header_wrapper_two,
+  .header_wrapper_three {
+    margin: 0;
+  }
+  img.header_photo {
+    width: 60%;
+    display: contents;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header_wrapper_three {
+    padding: 30px 20px;
+  }
 }

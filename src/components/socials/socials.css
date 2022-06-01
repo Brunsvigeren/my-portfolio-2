@@ -35,3 +35,11 @@
   height: 4rem;
   background: var(--color-purple);
 }
+
+/* ================ SOCIAL QUERIES ========== */
+
+@media screen and (max-width: 800px) {
+  .socials {
+    display: none;
+  }
+}
