@@ -1,17 +1,30 @@
+import { useRef, useState } from "react";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWorm } from "@fortawesome/free-solid-svg-icons";
+import { faWorm, faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationLinks = () => {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
+  /* VIRKER IKKE, menu kan ikke klikkes på igen
+  
+  const closeDropdown = () => {
+    navRef.current.classList.toggle("close_nav");
+  }; */
+
   return (
-    <nav className="navigation">
+    <div className="container navbar">
       <div className="nav-logo">
-        <a href="#">
+        <a href="#home">
           <FontAwesomeIcon icon={faWorm} className="logo" />
         </a>
       </div>
-      <div className="nav-links">
-        <a href="#" id="about_link">
+      <nav ref={navRef} className="nav-links">
+        <a href="#about" id="about_link">
           ABOUT
         </a>
         <a href="#" id="what_i_do_link">
@@ -20,8 +33,15 @@ const NavigationLinks = () => {
         <a href="#" id="contact_link">
           CONTACT
         </a>
-      </div>
-    </nav>
+        <button onClick={showNavbar} className="btn-icons closing-icon">
+          <FontAwesomeIcon icon={faX} />
+        </button>
+      </nav>
+
+      <button onClick={showNavbar} className="btn-icons hamburger-icon">
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+    </div>
   );
 };
 

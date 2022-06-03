@@ -10,22 +10,25 @@ const Socials = () => {
   return (
     <div className="socials">
       <div className="header_socials">
-        <a href="#" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/stinebraunschweigandersen/"
+          target="_blank"
+        >
           <FontAwesomeIcon
             icon={faLinkedin}
             className="header_social_linkedin"
           />
         </a>
-        <a href="#" target="_blank">
+        <a href="https://github.com/Brunsvigeren" target="_blank">
           <FontAwesomeIcon icon={faGithub} className="header_social_github" />
         </a>
-        <a href="#" target="_blank">
+        <a href="https://www.instagram.com/stinebraunschweig/" target="_blank">
           <FontAwesomeIcon
             icon={faInstagram}
             className="header_social_instagram"
           />
         </a>
-        <a href="#" target="_blank">
+        <a href="https://twitter.com/stinebraun" target="_blank">
           <FontAwesomeIcon icon={faTwitter} className="header_social_twitter" />
         </a>
       </div>

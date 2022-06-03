@@ -4,7 +4,7 @@ import Socials from "../../components/socials/Socials";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header_container">
         <div className="header_wrapper">
           <div className="header_wrapper_top">
@@ -19,16 +19,18 @@ const Header = () => {
           </div>
           <div className="header_wrapper_two">
             <h3>
-              I am <span className="name-hightlight">Stine</span>,
+              I am
+              <br />
+              <span className="name-hightlight">Stine Braunschweig</span>,
               <br />
               and I do stuff.
             </h3>
           </div>
           <div className="header_wrapper_three">
             <p className="header_paragraph">
-              Project management, media prodcution and a little bit of web
-              development. In other words - I wear many hats with many different
-              purposes, and I can wear one that suits your project.
+              ... such as project management, media prodcution and a little bit
+              of web development. In other words, I wear many hats with many
+              different purposes, and I can wear one that suits your project.
             </p>
           </div>
         </div>

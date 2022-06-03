@@ -54,14 +54,13 @@ h5 {
 }
 
 h1 {
-  font-size: 4.3rem;
   font-weight: bold;
   font-family: "Anton", sans-serif;
   letter-spacing: 4px;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 p {
@@ -69,17 +68,19 @@ p {
   font-weight: 300;
 }
 
-.header_paragraph {
-  font-size: 1.3rem;
-}
-
 section {
-  margin-top: 8rem;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  min-height: 100vh;
 }
 
 section > h2 {
   text-align: center;
   color: var(--color-black);
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  margin: 30px auto 13px auto;
+  padding-bottom: 30px;
 }
 
 a {
@@ -93,22 +94,36 @@ a:hover {
 
 .btn {
   width: max-content;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   background: var(--color-purple);
   color: var(--color-black);
-  padding: 0.75rem 1.2rem;
+  padding: 2.2rem 2.5rem;
   border-radius: 0.4rem;
   cursor: pointer;
   transition: var(--transition);
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
 }
 
 .btn:hover {
   background: var(--color-blue);
 }
 
-img {
-  display: block;
-  width: 100%;
+.btn-icons {
+  background-color: transparent;
+  transition: var(--transition);
+  width: max-content;
+  display: flex;
+  background: transparent;
+  color: var(--color-purple);
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.btn-icons:hover {
+  color: var(--color-blue);
 }
 
 /*=========== MEDIA QUERIES (MEDIUM DEVICES, TABLETS) ===========*/
@@ -125,7 +140,7 @@ img {
 
 /*=========== MEDIA QUERIES (SMALL DEVICES, PHONES) ===========*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .container {
     width: var(--container-width-sm);
   }

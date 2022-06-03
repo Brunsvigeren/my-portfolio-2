@@ -1,10 +1,10 @@
 import React from "react";
-import Navigation from "./Navigation";
+import NavigationLinks from "./NavigationLinks";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <Navigation />
+    <div className="container">
+      <NavigationLinks />
     </div>
   );
 };

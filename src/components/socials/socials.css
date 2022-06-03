@@ -36,9 +36,24 @@
   background: var(--color-purple);
 }
 
+.header_social_linkedin,
+.header_social_github,
+.header_social_instagram,
+.header_social_twitter {
+  transition: ease-in-out;
+  transition-duration: 0.25s;
+}
+
+.header_social_linkedin:hover,
+.header_social_github:hover,
+.header_social_instagram:hover,
+.header_social_twitter:hover {
+  transform: translateY(-5px);
+}
+
 /* ================ SOCIAL QUERIES ========== */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .socials {
     display: none;
   }
