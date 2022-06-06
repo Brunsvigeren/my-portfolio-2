@@ -16,7 +16,7 @@
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 40px;
   margin-left: 5px;
   display: flex;
 }
@@ -37,7 +37,7 @@
 
 #about_link:hover,
 #what_i_do_link:hover {
-  color: var(--color-blue);
+  color: var(--color-darker-grey);
 }
 
 .btn-icons {

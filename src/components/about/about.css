@@ -4,31 +4,13 @@
 }
 
 .about_wrapper {
-  margin: 0 30px;
+  margin: 0 auto;
+  max-width: 60%;
 }
 
 .about_wrapper_one {
-  margin: 0 auto;
-  max-width: 1000px;
   margin-bottom: 60px;
-}
-
-.about_wrapper_two {
-  margin-bottom: 60px;
-  display: flex;
-}
-
-.about_wrapper_two {
-  align-items: center;
   justify-content: center;
-}
-
-.about_wrapper_main_title {
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
-  color: var(--color-purple);
 }
 
 .about_wrapper_main_paragraph {
@@ -36,76 +18,4 @@
   border-color: var(--color-purple);
   padding-right: 10px;
   padding-top: 10px;
-}
-
-.about_wrapper_title {
-  font-size: 22px;
-  margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
-  color: var(--color-black);
-}
-
-.card_title.work {
-  text-align: left;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
-.card {
-  flex: 0 1 calc(33%);
-  padding: 10px;
-  min-width: 252px;
-  min-height: 98px;
-  max-width: 300px;
-  flex-shrink: 3;
-  text-align: left;
-  border: 2px solid;
-  border-color: var(--color-purple);
-  border-radius: 0.4rem;
-  margin: 0 10px 10px 0;
-}
-
-.card_title.work,
-.card_title.education {
-  font-family: "Anton", sans-serif;
-  font-size: 25px;
-  margin: 20px auto;
-  text-align: center;
-  width: fit-content;
-  border-top: 1px solid;
-  border-color: var(--color-purple);
-}
-
-.card_title {
-  font-size: 14px;
-  color: var(--color-black);
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-.card_text {
-  font-size: 13px;
-  color: var(--color-purple);
-  font-weight: 500;
-}
-
-/* ============ ABOUT SCREENS/MEDIA QUERIES ========== */
-
-@media screen and (max-width: 626px) {
-  .card_title.work,
-  .card_title.education {
-    text-align: center;
-  }
-
-  .cards {
-    justify-content: center;
-  }
 }

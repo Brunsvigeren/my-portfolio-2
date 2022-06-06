@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWorm, faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { GiSadCrab } from "react-icons/gi";
 
 const NavigationLinks = () => {
   const navRef = useRef();
@@ -20,14 +21,14 @@ const NavigationLinks = () => {
     <div className="container navbar">
       <div className="nav-logo">
         <a href="#home">
-          <FontAwesomeIcon icon={faWorm} className="logo" />
+          <GiSadCrab className="logo" />
         </a>
       </div>
       <nav ref={navRef} className="nav-links">
         <a href="#about" id="about_link">
           ABOUT
         </a>
-        <a href="#" id="what_i_do_link">
+        <a href="#what_i_do" id="what_i_do_link">
           WHAT I DO
         </a>
         <a href="#" id="contact_link">

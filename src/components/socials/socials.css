@@ -40,8 +40,7 @@
 .header_social_github,
 .header_social_instagram,
 .header_social_twitter {
-  transition: ease-in-out;
-  transition-duration: 0.25s;
+  transition: var(--transition);
 }
 
 .header_social_linkedin:hover,

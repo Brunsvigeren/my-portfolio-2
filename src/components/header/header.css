@@ -69,6 +69,41 @@ header {
   max-width: 438px;
 }
 
+.mobile_display {
+  margin-top: 5rem;
+}
+
+.cards.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: none;
+}
+
+.card.header {
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  min-width: 200px;
+}
+
+.header_icon {
+  justify-content: center;
+  align-items: center;
+  color: #abbbe0;
+  font-size: 5.5rem;
+}
+
+.card_header_title {
+  padding-top: 15px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  text-decoration: overline wavy var(--color-purple);
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: var(--color-purple);
+}
+
 /* ============ HEADER MEDIA QUERIES ========== */
 
 /* ============ MEDIUM SCREENS/MEDIA QUERIES ========== */
@@ -99,6 +134,10 @@ header {
   }
   .header_photo {
     display: none;
+  }
+
+  .cards.header {
+    display: flex;
   }
 }
 

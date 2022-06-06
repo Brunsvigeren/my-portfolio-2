@@ -16,6 +16,7 @@
   --color-purple: #ca92ff;
   --color-grey: #fafafa;
   --color-blue: #9dd3e8;
+  --color-darker-grey: #ebe8e8;
 
   --transition: all 200ms ease;
 
@@ -78,9 +79,9 @@ section > h2 {
   text-align: center;
   color: var(--color-black);
   font-family: "Anton", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 30px auto 13px auto;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 a {
@@ -89,7 +90,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-blue);
+  color: var(--color-darker-grey);
 }
 
 .btn {
